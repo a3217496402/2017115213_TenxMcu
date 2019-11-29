@@ -1,4 +1,4 @@
-#define __main_c
+﻿#define __main_c
 #include "includeAll.h"
 void DelayMs(uint16_t msCount);
 //=============================================================================
@@ -8,7 +8,7 @@ void main() {
   VarsInit();
   F_ledOn();
   DelayMs(500);
-  //使能看门狗
+  //看门狗
   F_turnOnWDT();
   while (1) {
 		F_ledNeg();
