@@ -7,9 +7,11 @@
 #define D_ledOff 1 //低点位灭
 // Globle Var -----------------------------------------
 #ifdef __display_c
-
+bit bflag0;
+bit bflag;
 #else
-
+extern bit bflag0;
+extern bit bflag;
 #endif
 
 // Action Macro: exp: #define F_getData() ------
@@ -17,5 +19,11 @@
 #define F_ledOff() P_led = D_ledOff
 #define F_ledNeg() P_led = ~P_led
 // Function ------------------------------------
-
+void DisplayNumber(uint8_t number);
+void DisplayTenNumber(uint8_t number);
+void DisplayBitNumber(uint8_t number);
+void DisplayOn(uint8_t number);
+void DisplayClear2();
+void DisplayLED12(void);
+void DisplayLED14(void);
 #endif
