@@ -1,4 +1,4 @@
-#define __main_c
+﻿#define __main_c
 #include "includeAll.h"
 int modeValue = 1;
 int j = 10;
@@ -17,7 +17,7 @@ void main() {
   F_turnOnWDT();
 	led12 = 0;
 	led14 = 0;
-	P1_0 = 0;          // 开漏输出状态 且 数据位为0 时点
+	P1_0 = 0;          // 开漏输出状态且数据位为0时点
 	P1_4 = 0;
 	P1_2 = 0;
 	P1MODH = 0xaa;     //推挽输出状态控制蜂鸣器
