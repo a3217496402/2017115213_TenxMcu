@@ -26,6 +26,7 @@ void main() {
 	 while(key4){
   		F_clearWDT();
 			TimeProcess();
+
   		DisplayOn(1);
 			//DisplayNumber(i);		
 		}
